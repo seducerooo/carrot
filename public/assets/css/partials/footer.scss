@@ -1,0 +1,115 @@
+@import "../variable";
+
+footer{
+  .footer{
+    color:#65616B;
+    background: linear-gradient(303.73deg, #DDD7E8 -8.07%, rgba(218, 212, 230, 0) 131.35%);
+    .third {
+      a {
+        font-size: 0.875rem;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+          padding-left: 4px;
+        }
+      }
+    }
+
+    .purple{
+      background: linear-gradient(273.11deg, #4C2E81 -1.56%, #9E76E6 141.41%);
+      padding: 4rem 0 6rem;
+
+      p {
+        color: $white;
+        font-weight: 600!important;
+        font-size: 1.8125rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        @media screen and (max-width: 576px) {
+          font-size: 1.5rem;
+        }
+      }
+
+    }
+
+    .footer-links {
+      position: relative;
+
+      .footer-arrow {
+        position: absolute;
+        left: 0;
+        top: -70px;
+        width: 100%;
+        text-align: center;
+
+        a {
+          padding: 0!important;
+          display: block;
+          img {
+            height: 70px;
+            object-fit: contain;
+          }
+        }
+
+
+      }
+
+      .container{
+        .row{
+          &.second{
+            display: flex;
+            padding: 60px 0;
+            h5{
+              font-weight: 600!important;
+              font-size: 1.25rem;
+              color: $accent-2;
+              padding: 1rem 0 0;
+            }
+            p{
+              font-size: 1rem;
+              line-height: 21px;
+              color: $text-color;
+              padding: 2rem;
+            }
+          }
+          &.third{
+            padding: 1.5rem 0;
+            p{
+              font-size: 14px;
+              font-weight: 400;
+              &.title{
+                font-weight: 600;
+                font-size: 20px;
+                color:#65616B;
+              }
+            }
+            img{
+
+              margin-bottom: 16px;
+            }
+            .list-unstyled{
+              display: inline-block;
+              line-height: 2;
+            }
+
+            li{
+              list-style: none;
+
+            }
+          }
+          &.forth{
+            border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+            padding: 16px 0;
+            p{
+              margin-top: 16px;
+            }
+          }
+        }
+
+      }
+    }
+
+
+  }
+
+}

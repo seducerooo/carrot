@@ -1,0 +1,99 @@
+@import "../variable";
+
+
+.about-us{
+
+  h1{
+    margin-bottom: 2rem;
+    color: $white;
+    font-size: 3.375rem;
+    font-weight: 600!important;
+    @media screen and (max-width: 768px){
+      font-size: 2.8125rem;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 2.25rem;
+      vertical-align: center;
+    }
+  }
+  h4{
+    color: $accent-2;
+    font-size: 1.8125rem;
+    font-weight: 600!important;
+    margin-bottom: 1rem;
+    @media screen  and (max-width: 576px){
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+  }
+  p{
+    color: $text-secondary;
+    font-size: 1.25rem;
+    @media screen  and (max-width: 576px){
+      font-size: 1rem;
+    }
+  }
+
+
+  .first-section{
+
+    position: relative;
+
+    #home-page {
+      width: 100%;
+      object-fit: cover;
+      height: calc(100vh - 57px);
+      @media screen and(max-width: 992px){
+        height: calc(100vh - 51px);
+      }
+    }
+    .title-wrapper {
+      position: absolute;
+      top: 33%;
+      left: 0;
+      width: 100%;
+
+    }
+
+
+    .scroll-down {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+
+      img {
+        display: inline-block;
+        object-fit: contain;
+      }
+
+    }
+
+  }
+
+  .second-section{
+    background-color: $white;
+    padding: 5rem 0;
+    @media screen and (max-width: 768px){
+      padding: 2rem 0;
+    }
+  }
+
+
+  .third-section{
+    padding: 4rem 0;
+    background-color: $white;
+    h4{
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+  }
+
+
+
+
+
+
+
+}

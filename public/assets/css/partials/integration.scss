@@ -1,0 +1,184 @@
+@import "../variable";
+
+
+.integration {
+
+  h1 {
+    font-size: 3.375rem;
+    font-weight: 600 !important;
+    text-align: center;
+    color: $white;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 576px) {
+      font-size: 2.24rem;
+    }
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 600 !important;
+    color: $accent-2;
+    margin-bottom: 2rem;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: 2.375rem;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  h6 {
+    color: $table-text-title;
+    font-size: 1rem;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: $text-color;
+    text-align: center;
+    @media screen and (max-width: 576px) {
+      font-size: 1rem;
+    }
+  }
+
+  .first-section{
+
+    position: relative;
+
+    #home-page {
+      width: 100%;
+      object-fit: cover;
+      height: calc(100vh - 57px);
+      @media screen and(max-width: 992px){
+        height: calc(100vh - 51px);
+      }
+    }
+    .title-wrapper {
+      position: absolute;
+      top: 33%;
+      left: 0;
+      width: 100%;
+
+    }
+
+
+    .scroll-down {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+
+      img {
+        display: inline-block;
+        object-fit: contain;
+      }
+
+    }
+
+  }
+
+  .second-section {
+    background-color: $light-bi-primary;
+    padding: 5rem 0;
+
+    @media screen and (max-width: 576px){
+      p{
+        text-align: left;
+      }
+      h2{
+        text-align: left;
+      }
+    }
+
+
+  }
+
+
+  .third-section {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    background-color: $white;
+
+    .nav {
+      background-color: $light-bi-primary;
+      padding: 0.5rem;
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+
+
+      .nav-link {
+        font-size: 1rem;
+        color: $text-secondary;
+
+        &.active {
+          background: linear-gradient(210.11deg, rgba(255, 255, 255, 0.39) -32.18%, rgba(255, 255, 255, 0) 81.65%), #775EB1;
+          border-radius: 5px;
+          color: $white;
+        }
+      }
+    }
+
+
+    select:hover, :focus {
+      box-shadow: 0 0 6px rgba(119, 94, 177, 0.7);
+      border: 1px solid #775EB1;
+
+      option {
+        background-color: $white;
+        color: $text-secondary;
+
+        &:hover, :active, :focus, :visited, :focus-within {
+          background-color: $white;
+          color: $text-secondary;
+        }
+
+        .active {
+          color: $accent-2;
+        }
+      }
+    }
+
+    .tab-content {
+      margin-top: 2.5rem;
+
+      .item {
+        display: inline-block;
+        width: 16%;
+        margin: 20px;
+        min-height: 320px;
+        float: left;
+
+
+        @media screen and (max-width: 1024px) {
+          width: 28%;
+          margin: 0 12px;
+        }
+
+        @media screen and (max-width: 475px) {
+          width: 43%;
+        }
+        @media screen and (max-width: 370px) {
+          width: 90%;
+        }
+
+        img {
+          object-fit: contain;
+          width: 100%;
+        }
+
+        p {
+          font-size: 0.875rem;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+}
+

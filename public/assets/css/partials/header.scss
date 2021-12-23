@@ -1,0 +1,116 @@
+@import "../variable";
+
+.wrapper{
+  background-color: #ffffff;
+  min-height: 57px;
+  @media screen and (max-width: 768px){
+    min-height: 52px;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+
+  .desktop{
+    box-shadow: 0 10px 15px rgba(159,159,159, 0.25)!important;
+    background: $white;
+    z-index: 999;
+
+    .navbar-brand {padding-top: 0}
+
+    img{
+      width: 100%;
+      object-fit: contain;
+    }
+    ul{
+      float: right;
+      vertical-align: middle;
+      li {
+        display: inline-block;
+        margin-left: 16px;
+
+        a {
+          font-size: 1rem;
+          font-weight: 600;
+          color: $dark-primary;
+        }
+      }
+
+    }
+  }
+  .mobile{
+    box-shadow: 0 10px 15px rgba(159,159,159, 0.25)!important;
+    z-index: 999;
+    background: #fff;
+    padding: 10px;
+
+    img.icon{
+      width: 24px;
+      height: 24px;
+      margin-top: 5px;
+
+    }
+
+    .mobile-settings {
+      display: flex;
+      transition: all ease-in-out 0.3s;
+      z-index: 9000;
+      height: 0;
+      overflow: hidden;
+      background-image: url("../img/head_menu_bg.png");
+      background-color: $white;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+
+      &.show {
+        height: 100vh;
+        overflow: auto;
+      }
+
+
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+
+
+      ul {
+        margin-bottom: 16px;
+
+        li {
+
+          padding: 16px 8px;
+
+        a {
+          font-size: 1.5rem;
+          color: $bi-primary;
+          }
+        }
+      }
+
+      .close-header{
+        position: absolute;
+        top: 16px;
+        right: 16px;
+      }
+      .header-setting-logo {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+      }
+
+    }
+
+  }
+
+}

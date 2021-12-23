@@ -1,0 +1,121 @@
+@import "../variable";
+
+.early-access {
+  background-image: url("../../assets/img/get_early_access_edited.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 56px);
+  position: relative;
+
+
+  .shades {
+    background: rgba(238, 238, 238, 0.65);
+    backdrop-filter: blur(4px);
+    width: 40%;
+    height: 100%;
+    position: relative;
+    min-height: calc(100vh - 56px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+  }
+  form {
+    width: 100%;
+    padding: 4rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
+  h3 {
+    font-size: 1.275rem!important;
+  }
+  h1 {
+    font-size: 2.125rem;
+    font-weight: 600!important;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 768px) {
+      font-size: 2rem!important;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 1.5rem!important;
+    }
+  }
+
+  .rounding {
+    transition: all 0.88s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  #early-form {
+
+    &.active {
+      transform: rotateY(-180deg);
+      display: none;
+    }
+  }
+
+  #early-form-success {
+    transform: rotateY(180deg);
+    height: 0px;
+
+    &.active {
+      transform: rotateY(0deg);
+      height: auto;
+    }
+  }
+
+  .fix-height {
+    height: 100% !important;
+    overflow: hidden!important;
+  }
+
+
+  @media screen and (min-height: 400px) and (max-height: 1120px) {
+    background-size: contain;
+    background-position: center left;
+
+    .shades{
+      background: rgba(238, 238, 238, 0.95);
+      box-shadow: 0 10px 15px rgb(0,0, 0, 0.25);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    background-image: url("../../assets/img/mb_get_early_access.jpg");
+  }
+
+
+  @media screen and (max-width: 1024px) {
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 52px);
+
+    .shades {
+      background: unset!important;
+      backdrop-filter: unset!important;
+      width: 100%;
+    }
+
+    h2, h1, h3 {
+      color: $white;
+    }
+    h1 {
+      margin-bottom: 5rem;
+    }
+
+    form {
+      padding: 12rem 2rem 5rem!important;
+    }
+    .mobile-title {
+      font-size: 1.25rem!important;
+      text-align: center!important;
+      display: block!important;
+    }
+  }
+
+}
+
+

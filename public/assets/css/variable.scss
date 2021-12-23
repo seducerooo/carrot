@@ -1,0 +1,53 @@
+$white: #fff;
+$text-gray: #929292;
+$light-gray: #e4e4e4;
+$light-gray-2: #dcdcdc;
+$alert-light-gray: #E2E3E5;
+$dark-gray: #707070;
+$back-gray: #eeeeee;
+$dark-gray-2: lighten(#6c6c6c, 40%); // Render as: #d2d2d2
+$light-blue: #0e6baf;
+$back-white: #f8f8f8;
+$light-gray-3: #a2a2a2;
+$dark-gray-3: #b1b1b1;
+$bi-primary:#775EB1;
+$text-color: #65616B;
+$dark-primary: #171846;
+$light-bi-primary: #F7F5FA;
+$accent-2: #4C2E81;
+$text-primary: rgba(0, 0, 0, 0.8);
+$text-secondary: rgba(0, 0, 0, 0.68);
+$table-text-title:  #54505A;
+
+
+// Radius
+$soft-radius: 10px;
+$hard-radius: 32px;
+$round-radius: 50%;
+
+// MIXINS
+@mixin custom-btn($color) {
+  background-color: $color;
+  border: 1px solid $color;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  //font-weight: 700!important;
+  transition: all 0.3s ease-in-out;
+  &:hover, &:focus {
+    background-color: lighten($color, 10%)!important;
+    border-color: lighten($color, 10%)!important;
+    box-shadow: 0 4px 10px 1px #c6c6c6;
+  }
+}
+@mixin custom-outline-btn($color) {
+  color: $color;
+  border: 1px solid $color;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  //font-weight: 500!important;
+  &:hover, &:focus {
+    background-color: $color!important;
+    color: white!important;
+    border: 1px solid $color!important;
+  }
+}

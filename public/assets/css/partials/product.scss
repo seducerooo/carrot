@@ -1,0 +1,123 @@
+@import "../variable";
+
+.product{
+
+  h1{
+    margin-bottom: 2rem;
+    color: $white;
+    font-size: 3.375rem;
+    font-weight: 600!important;
+    @media screen and (max-width: 768px){
+      font-size: 2.8125rem;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 2.25rem;
+      vertical-align: center;
+    }
+  }
+  h4{
+    padding-top: 1.5rem;
+    color: $accent-2;
+    font-size: 1.8125rem;
+    font-weight: 600!important;
+    margin-bottom: 1.5rem;
+    @media screen  and (max-width: 576px){
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      padding-top: 0;
+    }
+  }
+  p{
+    color: $text-secondary;
+    font-size: 1.25rem;
+    font-weight: 600;
+    @media screen  and (max-width: 576px){
+      font-size: 1rem;
+    }
+  }
+
+  .first-section{
+
+    position: relative;
+
+    #home-page {
+      width: 100%;
+      object-fit: cover;
+      height: calc(100vh - 57px);
+      @media screen and(max-width: 992px){
+        height: calc(100vh - 51px);
+      }
+    }
+    .title-wrapper {
+      position: absolute;
+      top: 33%;
+      left: 0;
+      width: 100%;
+
+    }
+
+
+    .scroll-down {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+
+      img {
+        display: inline-block;
+        object-fit: contain;
+      }
+
+    }
+
+  }
+
+  .second-section, .fourth-section, .sixth-section{
+
+    background-color: $white;
+    padding: 6rem 0;
+    @media screen and (max-width: 769px){
+      padding: 3rem 0;
+    }
+    .row{
+      @media screen and (max-width: 768px) {
+        //flex-direction: column-reverse;
+
+        .col-md-5 , .col-md-6 {
+          width: 100%;
+        }
+      }
+
+      img{
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+  }
+
+  .third-section, .fifth-section{
+    padding: 6rem 0;
+    @media screen and (max-width: 769px){
+      padding: 3rem 0;
+    }
+    background-color: $light-bi-primary;
+
+    .row {
+      @media screen and (max-width: 768px) {
+
+        flex-direction: column-reverse;
+
+        .col-md-5, .col-md-6 {
+          width: 100%;
+        }
+      }
+    }
+    img{
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+
+
+}

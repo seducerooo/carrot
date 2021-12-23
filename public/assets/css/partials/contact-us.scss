@@ -1,0 +1,189 @@
+@import "../variable";
+
+.contact-us{
+
+  input {
+    border-radius: 4px!important;
+  }
+
+  h1{
+    font-size: 3.375rem;
+    font-weight: 600!important;
+    text-align: center;
+    color: $white;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 768px){
+      font-size: 2.8125rem;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 2.25rem;
+    }
+  }
+  h2{
+    font-size: 3.375rem;
+    text-align: center;
+    color: $white;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 576px){
+      font-size: 2.25rem;
+    }
+  }
+  .btn-bi-shadow{
+    min-height: 2.5rem;
+    min-width: 13.6875rem;
+  }
+  .btn-bi-primary{
+    min-height: 2.5rem;
+    min-width: 13.6875rem;
+  }
+
+  h4{
+    font-size: 1.375rem;
+    font-weight: 600!important;
+    color: $accent-2;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 576px){
+      font-size: 1.25rem;
+      margin-bottom: 1rem
+    }
+
+  }
+  p{
+    font-size: 1.25rem;
+    color: $text-primary;
+    line-height: 2rem;
+    @media screen and (max-width: 576px){
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+  }
+  .first-section{
+
+    position: relative;
+    background-image: url("../../assets/img/contact-us.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 57px);
+    @media screen and(max-width: 1024px){
+      height: calc(100vh - 51px);
+      background-image: url("../../assets/img/mb_contact_us.jpg");
+    }
+
+
+    .title-wrapper {
+      position: absolute;
+      top: 33%;
+      left: 0;
+      width: 100%;
+
+    }
+
+
+    .scroll-down {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+
+      img {
+        display: inline-block;
+        object-fit: contain;
+      }
+
+    }
+
+  }
+
+
+
+  .second-section{
+    background-image: url("../../assets/img/contact-us-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7rem 6.25rem;
+    @media screen and (max-width: 992px){
+      padding: 3rem 0rem;
+    }
+    .row{
+
+      @media screen and (max-width: 768px){
+        flex-direction: column-reverse;
+      }
+    }
+
+
+
+
+    .card{
+      min-height: 750px;
+      transition: all 0.88s ease;
+      position: relative;
+
+      .rounding {
+        transition: all 0.88s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .card-body {
+        background-color: #fff;
+
+        &.active {
+          transform: rotateY(-180deg);
+        }
+      }
+
+      .card-success {
+        background-image: linear-gradient(to right bottom, lighten($bi-primary, 30%), lighten($bi-primary, 20%), lighten($bi-primary, 10%), $bi-primary);
+        transform: rotateY(180deg);
+        height: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+          font-size: 2rem;
+          color: $white;
+        }
+        h3 {
+          font-size: 1.125rem;
+          color: $white;
+        }
+
+        &.active {
+          transform: rotateY(0deg);
+        }
+      }
+
+
+      .card-body{
+        padding: 2rem;
+        form{
+          label{
+            margin-bottom: 0.25rem;
+          }
+          input{
+            margin-bottom: 1.25rem;
+          }
+          button{
+            margin-top: 2rem;
+          }
+        }
+
+        @media screen and (max-width: 768px){
+          padding: 2rem 0;
+        }
+
+
+      }
+    }
+
+  }
+}
